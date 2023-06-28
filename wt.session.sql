@@ -1,0 +1,1 @@
+SELECT wine.wine_name,winery.winery_name FROM inventory INNER JOIN (wine INNER JOIN winery on wine.winery_id = winery.winery_id) on inventory.wine_id = wine.wine_id ;
